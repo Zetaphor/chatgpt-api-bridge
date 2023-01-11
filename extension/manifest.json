@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Websocket Extension",
+  "version": "1.0",
+  "description": "An extension that communicates with a websocket server at localhost and queries the DOM of https://chat.openai.com",
+  "permissions": [
+    "tabs",
+    "webRequest",
+    "webRequestBlocking",
+    "*://localhost/*",
+    "https://chat.openai.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://chat.openai.com/*"],
+      "js": ["content-script.js"]
+    }
+  ]
+}
