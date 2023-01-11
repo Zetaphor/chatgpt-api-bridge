@@ -1,4 +1,4 @@
-ChatGPT API Bridge WebExtension
+# ChatGPT API Bridge WebExtension
 
 This is a web extension that provides an API interface to the official ChatGPT interface using websockets. It allows you to send inputs to ChatGPT and receive the corresponding output in real-time.
 ## Features
